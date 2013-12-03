@@ -27,6 +27,7 @@ setup(name='eteaching.policy',
       install_requires=[
           'setuptools',
           'loremipsum',
+          'z3c.jbot',
           'plone.app.contenttypes',
           'plone.app.dexterity [relations]',
           'plone.app.relationfield',

@@ -16,3 +16,6 @@ eteaching/policy/test_folder.py
 eteaching/policy/tests.py
 eteaching/policy/browser/__init__.py
 eteaching/policy/browser/setup.py
+eteaching/policy/tests/__init__.py
+eteaching/policy/tests/base.py
+eteaching/policy/tests/test_basics.py
