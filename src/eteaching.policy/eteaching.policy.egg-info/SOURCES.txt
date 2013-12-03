@@ -13,7 +13,6 @@ eteaching.policy.egg-info/requires.txt
 eteaching.policy.egg-info/top_level.txt
 eteaching/policy/__init__.py
 eteaching/policy/test_folder.py
-eteaching/policy/tests.py
 eteaching/policy/browser/__init__.py
 eteaching/policy/browser/setup.py
 eteaching/policy/tests/__init__.py
