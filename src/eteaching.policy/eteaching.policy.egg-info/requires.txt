@@ -1,0 +1,6 @@
+setuptools
+loremipsum
+plone.app.contenttypes
+plone.app.dexterity [relations]
+plone.app.relationfield
+plone.namedfile [blobs]
