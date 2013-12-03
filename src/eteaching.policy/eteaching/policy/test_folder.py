@@ -32,7 +32,7 @@ class ITestFolder(model.Schema, IImageScaleTraversable):
     # If you want a model-based interface, edit
     # models/test_folder.xml to define the content type.
 
-    model.load("models/test_folder.xml")
+    model.load("models/eteaching.policy.testfolder.xml")
 
 
 # Custom content-type class; objects created for this content type will
