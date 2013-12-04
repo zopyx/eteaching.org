@@ -5,5 +5,7 @@
         <dependency>profile-plone.app.dexterity:default</dependency>
         <dependency>profile-plone.app.relationfield:default</dependency>
         <dependency>profile-plone.app.contenttypes:default</dependency>
+        <dependency>profile-collective.embedly:default</dependency>
+        <dependency>profile-Products.PloneFormGen:default</dependency>
     </dependencies>
 </metadata>
