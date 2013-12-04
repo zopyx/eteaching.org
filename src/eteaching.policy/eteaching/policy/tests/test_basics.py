@@ -20,6 +20,10 @@ class BasicTests(TestBase):
         view = self.portal.restrictedTraverse('@@new-site')
         view(self.portal)
 
+    def testCreateTestFolder(self):
+        self.login('god')
+        self.portal.invokeFactory('eteaching.policy.testfolder', id='foo')
+        assert self.portal['foo'].portal_type == 'eteaching.policy.testfolder'
 
 def test_suite():
     from unittest2 import TestSuite, makeSuite

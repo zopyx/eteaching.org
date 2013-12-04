@@ -37,7 +37,7 @@ class PolicyFixture(PloneSandboxLayer):
 
         # Install product and call its initialize() function
         z2.installProduct(app, 'Products.DateRecurringIndex')
-        z2.installProduct(app, 'eteaching.policy')
+#        z2.installProduct(app, 'eteaching.policy')
 
     def setUpPloneSite(self, portal):
         # Install into Plone site using portal_setup
