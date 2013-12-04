@@ -16,8 +16,10 @@ from zope.configuration import xmlconfig
 from AccessControl.SecurityManagement import newSecurityManager
 from zope.component import getUtility
 
+import plone.app.contenttypes
+import plone.app.widgets
+import plone.app.event
 import eteaching.policy
-import plone.supermodel
 import z3c.jbot
 
 class PolicyFixture(PloneSandboxLayer):
@@ -27,12 +29,14 @@ class PolicyFixture(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
 
         xmlconfig.file('meta.zcml', z3c.jbot, context=configurationContext)
-        for mod in [plone.supermodel,
+        for mod in [plone.app.contenttypes,
+                    plone.app.widgets,
+                    plone.app.event,
                     eteaching.policy]: 
             xmlconfig.file('configure.zcml', mod, context=configurationContext)
 
-        xmlconfig.file('patches.zcml', eteaching.policy, context=configurationContext)
         # Install product and call its initialize() function
+        z2.installProduct(app, 'Products.DateRecurringIndex')
         z2.installProduct(app, 'eteaching.policy')
 
     def setUpPloneSite(self, portal):
